@@ -16,16 +16,19 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/bin/tzdatacheck:system/bin/tzdatacheck \
-    vendor/lge/tiger6/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/lge/tiger6/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/lge/tiger6/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/lge/tiger6/proprietary/lib/libaudioroute.so:system/lib/libaudioroute.so \
     vendor/lge/tiger6/proprietary/lib/libalsautils.so:system/lib/libalsautils.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
     vendor/lge/tiger6/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/tiger6/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \
     vendor/lge/tiger6/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
@@ -33,8 +36,21 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     vendor/lge/tiger6/proprietary/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
     vendor/lge/tiger6/proprietary/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
+    vendor/lge/tiger6/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
+    vendor/lge/tiger6/proprietary/bin/btnvtool:system/bin/btnvtool \
+    vendor/lge/tiger6/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/lge/tiger6/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
+    vendor/lge/tiger6/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
+    vendor/lge/tiger6/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
+    vendor/lge/tiger6/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
+    vendor/lge/tiger6/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
+    vendor/lge/tiger6/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
+    vendor/lge/tiger6/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
+    vendor/lge/tiger6/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
+    vendor/lge/tiger6/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
+    vendor/lge/tiger6/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/lge/tiger6/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/lge/tiger6/proprietary/lib/hw/camera.apq8084.so:system/lib/hw/camera.apq8084.so \
+    vendor/lge/tiger6/proprietary/lib/hw/camera.vendor.apq8084.so:system/lib/hw/camera.vendor.apq8084.so \
     vendor/lge/tiger6/proprietary/lib/libalmalib.so:system/lib/libalmalib.so \
     vendor/lge/tiger6/proprietary/lib/libHDR.so:system/lib/libHDR.so \
     vendor/lge/tiger6/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -51,10 +67,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
@@ -63,7 +80,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_imx135_eeprom.so:system/vendor/lib/libmmcamera_imx135_eeprom.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_imx208.so:system/vendor/lib/libmmcamera_imx208.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_isp_abf44.so:system/vendor/lib/libmmcamera_isp_abf44.so \
@@ -103,6 +122,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
@@ -139,6 +160,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/lge/tiger6/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/lge/tiger6/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
+    vendor/lge/tiger6/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/lge/tiger6/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/lge/tiger6/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/tiger6/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/lge/tiger6/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
@@ -203,9 +229,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/lib/hw/consumerir.apq8084.so:system/lib/hw/consumerir.apq8084.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
-    vendor/lge/tiger6/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/lge/tiger6/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/tiger6/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -220,37 +246,56 @@ PRODUCT_COPY_FILES += \
     vendor/lge/tiger6/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/lge/tiger6/proprietary/bin/efsks:system/bin/efsks \
     vendor/lge/tiger6/proprietary/bin/ks:system/bin/ks \
     vendor/lge/tiger6/proprietary/bin/mdm_helper:system/bin/mdm_helper \
     vendor/lge/tiger6/proprietary/bin/mdm_helper_proxy:system/bin/mdm_helper_proxy \
     vendor/lge/tiger6/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/lge/tiger6/proprietary/bin/qcks:system/bin/qcks \
     vendor/lge/tiger6/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/lge/tiger6/proprietary/bin/radish:system/bin/radish \
     vendor/lge/tiger6/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/tiger6/proprietary/lib/libuicc.so:system/lib/libuicc.so \
     vendor/lge/tiger6/proprietary/lib/libvss_common_idl.so:system/lib/libvss_common_idl.so \
     vendor/lge/tiger6/proprietary/lib/libvss_common_iface.so:system/lib/libvss_common_iface.so \
     vendor/lge/tiger6/proprietary/lib/libvss_nv_idl.so:system/lib/libvss_nv_idl.so \
     vendor/lge/tiger6/proprietary/lib/libvss_nv_iface.so:system/lib/libvss_nv_iface.so \
+    vendor/lge/tiger6/proprietary/lib/libatd_common.so:system/lib/libatd_common.so \
+    vendor/lge/tiger6/proprietary/lib/libatd_corelib.so:system/lib/libatd_corelib.so \
+    vendor/lge/tiger6/proprietary/lib/libatd_modeminterface.so:system/lib/libatd_modeminterface.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/lge/tiger6/proprietary/bin/radish:system/bin/radish \
     vendor/lge/tiger6/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/lge/tiger6/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
-    vendor/lge/tiger6/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
-    vendor/lge/tiger6/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
     vendor/lge/tiger6/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/lge/tiger6/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/lge/tiger6/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/lge/tiger6/proprietary/vendor/lib/hw/sensors.apq8084.so:system/vendor/lib/hw/sensors.apq8084.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
+    vendor/lge/tiger6/proprietary/vendor/lib/libsensor_lge_cal.so:system/vendor/lib/libsensor_lge_cal.so \
     vendor/lge/tiger6/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/lge/tiger6/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/lge/tiger6/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/lge/tiger6/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     vendor/lge/tiger6/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \

@@ -19,20 +19,12 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),tiger6)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := atfwd
+LOCAL_MODULE := qcrilmsgtunnel
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := atfwd/atfwd.apk
+LOCAL_SRC_FILES := qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := TimeService
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := TimeService/TimeService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 

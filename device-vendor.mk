@@ -18,12 +18,17 @@ $(call inherit-product, vendor/lge/tiger6/tiger6-vendor-blobs.mk)
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
+    atfwd \
     TimeService
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook
+
+# Prebuilt privileged APKs
+PRODUCT_PACKAGES += \
+    qcrilmsgtunnel
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
